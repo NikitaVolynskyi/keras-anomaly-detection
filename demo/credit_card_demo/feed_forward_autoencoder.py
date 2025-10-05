@@ -10,7 +10,7 @@ import numpy as np
 
 DO_TRAINING = False
 
-
+#changin file
 def preprocess_data(csv_data):
     credit_card_data = csv_data.drop(labels=['Class', 'Time'], axis=1)
     credit_card_data['Amount'] = StandardScaler().fit_transform(credit_card_data['Amount'].values.reshape(-1, 1))
